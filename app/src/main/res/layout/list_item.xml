@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+        <TextView
+            android:id="@+id/txt_WindingNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_WindingVoltage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/txt_WindingCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity=""
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_WindingTurns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/txt_WireThickness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="debljina žice"
+                    />
+                <TextView
+                    android:id="@+id/txt_WireLenght"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="duljina žice"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
+

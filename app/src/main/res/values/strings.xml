@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CalcMyTrafo</string>
+    <string name="Volts"> Voltage = </string>
+    <string name="Amps">  Current =  </string>
+    <string name="NumWind">  Number of winds =  </string>
+    <string name="WireThick">  Wire Thickness =  </string>
+    <string name="PVoltage">Primary Voltage =</string>
+    <string name="PCurrent">Primary Current =</string>
+    <string name="EFF">Efficiency = </string>
+    <string name="PWinds">Number of primary turns = </string>
+    <string name="OutPower">Output Power = </string>
+    <string name="CoreArea">Core Area = </string>
+    <string name="InputVoltage">Primary side voltage = </string>
+    <string name="Freq">Frequency</string>
+    <string name="SVoltage">Secondary Voltage</string>
+    <string name="SCurrent">Secondary Current</string>
+    <string name="ADD">ADD</string>
+    <string name="REMOVE">REMOVE</string>
+    <string name="Calc">Calculate</string>
+
+</resources>
