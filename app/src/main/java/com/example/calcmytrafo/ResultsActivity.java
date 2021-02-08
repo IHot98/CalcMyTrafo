@@ -37,13 +37,13 @@ public class ResultsActivity extends AppCompatActivity {
         float TotalPower = intent.getFloatExtra(MainActivity.EXTRA_TotalOutputPower, 0);
         float PWireThickness = intent.getFloatExtra(MainActivity.EXTRA_PrimaryWireThickness, 0);
 
-         pv.setText(String.format("%s%s V", getString(R.string.PVoltage), PrimaryVoltage));
-         pc.setText(String.format("%s%s A", getString(R.string.PCurrent), PrimaryCurrent));
-         ca.setText(String.format("%s%s cm^2", getString(R.string.CoreArea), CoreArea));
-         ef.setText(String.format("%s%s", getString(R.string.EFF), Efficiency));
-         pt.setText(String.format("%s%s", getString(R.string.PWinds), PrimaryTurns));
-         tp.setText(String.format("%s%s W", getString(R.string.OutPower), TotalPower));
-         pwt.setText(String.format("%s%s mm^2", getString(R.string.WireThick), PWireThickness));
+         pv.setText(String.format("%s %s V", getString(R.string.PVoltage), PrimaryVoltage));
+         pc.setText(String.format("%s %s A", getString(R.string.PCurrent), PrimaryCurrent));
+         ca.setText(String.format("%s %s cm^2", getString(R.string.CoreArea), CoreArea));
+         ef.setText(String.format("%s %s", getString(R.string.EFF), Efficiency));
+         pt.setText(String.format("%s %s", getString(R.string.PWinds), PrimaryTurns));
+         tp.setText(String.format("%s %s W", getString(R.string.OutPower), TotalPower));
+         pwt.setText(String.format("%s %s mm^2", getString(R.string.WireThick), PWireThickness));
 
         ResSekundari.addAll(MainActivity.ListSekundari);
          CustomArrayAdapter1 CustomAdapter = new CustomArrayAdapter1 (getApplicationContext(),R.layout.list_item,ResSekundari);

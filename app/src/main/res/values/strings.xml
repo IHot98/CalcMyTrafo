@@ -10,7 +10,7 @@
     <string name="PWinds">Number of primary turns = </string>
     <string name="OutPower">Output Power = </string>
     <string name="CoreArea">Core Area = </string>
-    <string name="InputVoltage">Primary side voltage = </string>
+    <string name="InputVoltage">Primary side voltage </string>
     <string name="Freq">Frequency</string>
     <string name="SVoltage">Secondary Voltage</string>
     <string name="SCurrent">Secondary Current</string>

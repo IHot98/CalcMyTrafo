@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ResultsActivity">
+    tools:context=".ResultsActivity"
+    android:background="@color/Color1"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Color1"
+            >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/app_name"
+                    android:textStyle="bold"
+                    android:textSize="18pt"
+                    android:textColor="@color/Color3"
+                    android:gravity="center"/>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="20"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:background="@color/Color11">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -21,15 +45,25 @@
                         <TextView
                             android:id="@+id/PrimaryVoltage"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Color3"
+                            android:textSize="10pt"
+                            android:textStyle="normal"
+                            />
                         <TextView
                             android:id="@+id/PrimaryCurrent"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Color3"
+                            android:textSize="10pt"
+                            android:textStyle="normal"/>
                         <TextView
                             android:id="@+id/PrimaryWindingTurns"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Color3"
+                            android:textSize="10pt"
+                            android:textStyle="normal"/>
 
 
                 </LinearLayout>
@@ -41,19 +75,31 @@
                         <TextView
                             android:id="@+id/CoreArea"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Color3"
+                            android:textSize="10pt"
+                            android:textStyle="normal"/>
                         <TextView
                             android:id="@+id/Efficiency"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Color3"
+                            android:textSize="10pt"
+                            android:textStyle="normal"/>
                         <TextView
                             android:id="@+id/TotalPower"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Color3"
+                            android:textSize="10pt"
+                            android:textStyle="normal"/>
                         <TextView
                             android:id="@+id/txt_PWireThickness"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Color3"
+                            android:textSize="10pt"
+                            android:textStyle="normal"/>
 
                 </LinearLayout>
 
@@ -67,7 +113,8 @@
                     android:id="@+id/List_results"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white" />
+                    android:background="@color/Color2" />
         </LinearLayout>
 
 </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

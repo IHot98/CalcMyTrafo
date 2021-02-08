@@ -40,11 +40,11 @@ public class CustomArrayAdapter1 extends ArrayAdapter<Sekundar>{
         TextView WireThickness=(TextView)convertView.findViewById(R.id.txt_WireThickness);
         TextView WireLenght=(TextView)convertView.findViewById(R.id.txt_WireLenght);
 
-        SecondaryWindingNumber.setText(String.format("Secondary no.%s", String.valueOf(position + 1)));
+        SecondaryWindingNumber.setText(String.format("Secondary no.%s", (position + 1)));
         WindingVoltage.setText(String.format("%s %s V", mContext.getString(R.string.Volts), ResSekundari.get(position).getNapon()));
         WindingCurrent.setText(String.format("%s %s A", mContext.getString(R.string.Amps), ResSekundari.get(position).getStruja()));
         WindingTurns.setText(String.format("%s %s",mContext.getString(R.string.NumWind), ResSekundari.get(position).getBrojNamota()));
-        WireThickness.setText(String.format("%s %s mm^2", mContext.getString(R.string.WireThick), String.valueOf(ResSekundari.get(position).getDebljinaZice() )));
+        WireThickness.setText(String.format("%s %s mm^2", mContext.getString(R.string.WireThick), ResSekundari.get(position).getDebljinaZice()));
         WireLenght.setText(" ");
         return convertView;
     }

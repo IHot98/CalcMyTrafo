@@ -1,19 +1,15 @@
 package com.example.calcmytrafo;
 
-import android.os.Parcelable;
-
-
 
 public class Sekundar  {
 
 
-    private float Napon;
-    private float Struja;
+   final private float Napon;
+   final private float Struja;
     private float BrojNamota;
     private float DebljinaZice;
 
-    public void setNapon(float napon) {        Napon = napon;    }
-    public void setStruja(float struja) {        Struja = struja;    }
+
     public void setBrojNamota(float brojNamota) { BrojNamota = brojNamota;}
 
     public void setDebljinaZice(float debljinaZice) {        DebljinaZice = debljinaZice;    }
@@ -32,19 +28,7 @@ public class Sekundar  {
         BrojNamota=0;
         DebljinaZice=0;
 
-    };
-    public Sekundar(float sNapon, float sStruja, float BN){
-        Napon=sNapon;
-        Struja=sStruja;
-        BrojNamota=BN;
-        DebljinaZice=0;
+    }
 
-    };
-    public Sekundar(){
-        Napon=0;
-        Struja=0;
-        BrojNamota=0;
-        DebljinaZice=0;
-    };
 
 }
